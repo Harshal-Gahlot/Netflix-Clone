@@ -1,0 +1,172 @@
+* {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1fr;
+    margin: 0 10vw;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+nav ul li:first-child{
+    flex-grow: 6;
+    font-size: 36px;
+    color: #ff0000;
+}
+
+nav ul li span {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+nav ul li span p {
+    padding-left:5px;
+}
+nav ul li button {
+    border: none;
+    background-color: red;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+header {
+    margin-top: 31.5vh;
+}
+
+.desc, .ask-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.subhead {
+    padding: 20px 0 25px 0;
+    font-size: 1.5rem;
+}
+.ready-to-watch {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.ask-email div {
+    display: flex;
+    column-gap: 10px;
+}
+.ask-email div input{
+    padding: 3vh 15vw 3vh 1vw ;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: #ffffff10;
+}
+.ask-email div input::placeholder{
+    color: #ffffffbb;
+    font-size: 16px;
+}
+.ask-email div input:focus-visible {
+    outline: 2px solid white ;
+}
+.ask-email div button {
+    padding: 2vh 2vw;
+    background-color: #ff0000dd;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+br{
+    color: #ff0000;
+    background-color: #fff;
+}
+section {
+    background-color: #ff0000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10vh 10vw;
+}
+
+.inner {
+    display: grid;
+}
+
+.inner video {
+    width: 50%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.faq h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.question {
+    background-color: rgba(128, 128, 128, 0.3);
+    width: 72vw;
+    padding: 26px 25px; 
+    margin-bottom: 10px;
+}
+.question h3 {
+    font-size: 24px;
+    font-weight: 400;
+    background-color: transparent;
+    display: inline;
+}
+
+.question button {
+    background: transparent;
+    position: absolute;
+    border: none;
+    right: 14vw;
+    margin-top: 3px;
+    width: 35px;
+    height: 35px;
+}
+.question svg {
+    background-color: transparent;
+}
+
+footer {
+    width: 80vw;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+    color: #a0a0a0;
+    margin-bottom: 80px;
+}
+
+.end-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 6vh 6vh 6vh 6vh;
+}
+.end-links a {
+
+}
