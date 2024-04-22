@@ -3,7 +3,29 @@
     color: #fff;
     margin: 0;
     padding: 0;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+        sans-serif;
+}
+
+.bg-img {
+    background-image: url("assets/netflix-first.jpg");
+    background-position:50% 84.5%;
+    background-size: 124vw;
+    background-repeat: no-repeat;
+    height: 700px;
+    border: 50px ;
+    /* box-shadow: 0px 150px 20em 50px black inset; */
+}
+
+hr {
+    margin: 0px;
+    height: 8px;
+    border: none;
+    background-color: #a0a0a040;
+}
+
+nav {
+    background: none;
 }
 
 nav ul {
@@ -12,15 +34,16 @@ nav ul {
     flex-grow: 1fr;
     margin: 0 10vw;
     align-items: center;
+    background: none;
 }
 
 nav ul li {
     display: inline-block;
     padding: 20px;
-    
+    background: none;
 }
 
-nav ul li:first-child{
+nav ul li:first-child {
     flex-grow: 6;
     font-size: 36px;
     color: #ff0000;
@@ -32,9 +55,11 @@ nav ul li span {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
 nav ul li span p {
-    padding-left:5px;
+    padding-left: 5px;
 }
+
 nav ul li button {
     border: none;
     background-color: red;
@@ -46,45 +71,59 @@ nav ul li button {
 
 header {
     margin-top: 31.5vh;
+    background: none;
 }
 
-.desc, .ask-email {
+.desc,
+.ask-email {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: none;
 }
 
 .header {
     font-size: 3rem;
     font-weight: 900;
+    background: none;
 }
+
 .subhead {
     padding: 20px 0 25px 0;
     font-size: 1.5rem;
+    background: none;
 }
+
 .ready-to-watch {
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 20px;
+    background: none;
 }
+
 .ask-email div {
     display: flex;
     column-gap: 10px;
+    background: none;
 }
-.ask-email div input{
-    padding: 3vh 15vw 3vh 1vw ;
+
+.ask-email div input {
+    padding: 3vh 15vw 3vh 1vw;
     border-radius: 3px;
     border: 1px solid gray;
     background-color: #ffffff10;
 }
-.ask-email div input::placeholder{
+
+.ask-email div input::placeholder {
     color: #ffffffbb;
     font-size: 16px;
 }
+
 .ask-email div input:focus-visible {
-    outline: 2px solid white ;
+    outline: 2px solid white;
 }
+
 .ask-email div button {
     padding: 2vh 2vw;
     background-color: #ff0000dd;
@@ -93,23 +132,30 @@ header {
     border-radius: 3px;
     font-size: 1.5rem;
 }
-br{
-    color: #ff0000;
-    background-color: #fff;
-}
+
 section {
-    background-color: #ff0000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10vh 10vw;
 }
 
-.inner {
+.side-TV-vid-img {
     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
-.inner video {
-    width: 50%;
+.side-TV-vid-img video {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 29.2em;
+    margin: 100px 84px;
+}
+
+.side-TV-vid-img img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background: none;
 }
 
 .faq {
@@ -129,9 +175,10 @@ section {
 .question {
     background-color: rgba(128, 128, 128, 0.3);
     width: 72vw;
-    padding: 26px 25px; 
+    padding: 26px 25px;
     margin-bottom: 10px;
 }
+
 .question h3 {
     font-size: 24px;
     font-weight: 400;
@@ -148,6 +195,7 @@ section {
     width: 35px;
     height: 35px;
 }
+
 .question svg {
     background-color: transparent;
 }
@@ -166,7 +214,4 @@ footer {
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
     grid-template-rows: 6vh 6vh 6vh 6vh;
-}
-.end-links a {
-
 }
